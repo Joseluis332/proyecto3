@@ -1,0 +1,493 @@
+body {
+    font-family: sans-serif;
+    background-color: #3366ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px; /* Limita el ancho del contenedor para mejor lectura */
+    margin: 40px auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: #fff; /* Un fondo gris claro para contrastar con el azul */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sutil sombra para levantar el formulario */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.registro-box {
+    margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold; /* Resalta las etiquetas */
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus {
+    border-color: #007bff; /* Resalta el borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sutil sombra al enfocar */
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%; /* O el ancho que prefieras */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+p a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+.registro-box {
+    margin-top: 20px;
+}
+
+#main-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.login-box {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.login-box h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+} 
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.login-box buttom {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15 px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%
+}
+
+.login-box buttom:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    margin-top: 20px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffe0e0;
+    border: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.error-message a {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.error-message a:hover {
+    color: blue;
+}
+
+
+.menu-acciones {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.menu-acciones ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-acciones ul li {
+    margin-bottom: 10px;
+}
+
+.menu-acciones ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-acciones ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la lista de docentes */
+.docente-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 0.9em; /* Reducir un poco el tamaño de la fuente puede ayudar */
+}
+
+.docente-list-table th, .docente-list-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; /* Evitamos el salto de línea donde no queremos */
+}
+
+.docente-list-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center; /* Centramos los encabezados para mejor visualización */
+}
+
+.docente-list-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Anchos de columna más específicos */
+.docente-list-table th:nth-child(1), /* # (ID) */
+.docente-list-table td:nth-child(1) {
+    width: 40px;
+    text-align: center;
+}
+
+.docente-list-table th:nth-child(2), /* Cédula */
+.docente-list-table td:nth-child(2) {
+    width: 100px;
+}
+
+.docente-list-table th:nth-child(3), /* Nombre */
+.docente-list-table td:nth-child(3) {
+    width: 120px;
+}
+
+.docente-list-table th:nth-child(4), /* Apellido */
+.docente-list-table td:nth-child(4) {
+    width: 120px;
+}
+
+.docente-list-table th:nth-child(5), /* Email */
+.docente-list-table td:nth-child(5) {
+    width: 180px;
+    overflow: hidden; /* Ocultamos el desbordamiento si el email es muy largo */
+    text-overflow: ellipsis; /* Mostramos puntos suspensivos para indicar texto oculto */
+}
+
+.docente-list-table th:nth-child(6), /* Teléfono */
+.docente-list-table td:nth-child(6) {
+    width: 100px;
+}
+
+.docente-list-table th:nth-child(7), /* Registro */
+.docente-list-table td:nth-child(7) {
+    width: 120px;
+    text-align: center;
+}
+
+.docente-list-table .actions {
+    text-align: center;
+    width: 100px;
+}
+
+.docente-list-table .actions a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007bff;
+    display: inline-block; /* Para que los enlaces estén en la misma línea */
+}
+
+.docente-list-table .actions a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el Modal de Confirmación */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Permanece en la misma posición al hacer scroll */
+    z-index: 1; /* Se sitúa por encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilita el scroll si es necesario */
+    background-color: rgba(0,0,0,0.4); /* Fondo semi-transparente */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% desde la parte superior y centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Podrías ajustar esto */
+    max-width: 500px; /* Ancho máximo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+    position: relative; /* Para posicionar el botón de cerrar */
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.modal-content p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-confirm {
+    background-color: #dc3545; /* Rojo para Aceptar (eliminar) */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.button-confirm:hover {
+    background-color: #c82333;
+}
+
+.button-cancel {
+    background-color: #6c757d; /* Gris para Cancelar */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.button-cancel:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos para los mensajes (si los implementaste en la vista) */
+.message-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.form-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el título y el botón */
+}
+
+.form-card h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Estilos para cada grupo de formulario (etiqueta + input) */
+.form-group {
+    display: flex; /* Usa flexbox para alinear etiqueta y campo */
+    align-items: center; /* Centra verticalmente los ítems */
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 1; /* La etiqueta ocupa 1 parte del espacio */
+    text-align: right; /* Alinea el texto de la etiqueta a la derecha */
+    padding-right: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    flex: 2; /* El input ocupa 2 partes del espacio, siendo más ancho */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Asegura que el input ocupe el espacio flexible asignado */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* Estilos para el botón primario */
+.button-primary {
+    background-color: #007bff; /* Color azul, puedes ajustarlo */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los enlaces al pie del formulario */
+.form-card p a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block; /* Para que cada enlace ocupe su propia línea */
+}
+
+.form-card p a:hover {
+    text-decoration: underline;
+}
+
+/* Y no olvides los estilos para mensajes (éxito/error) */
+.message-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0.9em;
+}
